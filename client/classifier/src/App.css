@@ -1,0 +1,42 @@
+.app_container{
+    display: grid;
+    grid-template-areas: 
+    "title-section title-section"
+    'input-section results-section';
+    grid-template-rows: 30vh 70vh;
+    grid-template-columns: 40% auto;
+}
+
+.title_section{
+    display: grid;
+    grid-area: title-section;
+    background-color: #232931;
+    color: #eeeeee;
+
+
+}
+
+.title_section h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 4rem;
+
+}
+
+.input_section, .results_section{
+    background-color: #393e46;
+    color: white;
+    
+
+}
+.input_section{
+    grid-area: input-section;
+    padding-left: 10%;
+}
+
+
+.results_section{
+    grid-area: results-section;
+    padding-right: 10%;
+    padding-left: 10%;
+}
