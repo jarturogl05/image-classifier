@@ -1,0 +1,31 @@
+.fileUpload_container{
+    display: flex;
+    font-family: lato;
+
+}
+
+.fileUpload_container form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fileUpload_sendButton{
+   margin-top: 20px;
+   font-size: 1.2rem;
+   padding: 5px;
+   font-weight: 550;
+   text-decoration:none;
+   outline: 0;
+   border-radius:0.7em;
+   transition: all 0.2s;
+   color: white;
+   background-color: #4ecca3;
+
+
+}
+
+.fileUpload_sendButton:hover{
+    cursor: pointer;
+    border: solid 2px #4ecca3 ;
+}
