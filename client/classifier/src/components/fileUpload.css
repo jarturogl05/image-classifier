@@ -10,6 +10,27 @@
 }
 
 
+.fileUpload_container input{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+.image_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.image_info img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+    
+}
+
+
 .fileUpload_sendButton{
    margin-top: 20px;
    font-size: 1.2rem;

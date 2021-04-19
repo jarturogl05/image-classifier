@@ -32,6 +32,9 @@
 .input_section{
     grid-area: input-section;
     padding-left: 10%;
+    min-height:0; /* added */
+
+    
 }
 
 
@@ -39,4 +42,19 @@
     grid-area: results-section;
     padding-right: 10%;
     padding-left: 10%;
+}
+
+
+
+
+@media (max-width :900px){
+    .app_container{
+        grid-template-areas: 
+        "title-section"
+        'input-section'
+        "results-section";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+    
 }
