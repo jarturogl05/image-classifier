@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Dropzone from './components/Dropzone.js'
+import FileUpload from './components/FileUpload'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
         <div className = 'input_section'>
             <h2>Select a image</h2>
-            <Dropzone></Dropzone>
+            <FileUpload></FileUpload>
         </div>
         <div className="results_section">
             <h2>Results</h2>
