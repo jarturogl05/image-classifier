@@ -11,7 +11,7 @@
 
 
 .fileUpload_container input{
-    border: 1px solid #ccc;
+    border: 1px solid #4ecca3;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
@@ -37,16 +37,39 @@
    padding: 5px;
    font-weight: 550;
    text-decoration:none;
-   outline: 0;
+   outline: none;
    border-radius:0.7em;
    transition: all 0.2s;
    color: white;
    background-color: #4ecca3;
+   border: solid 1px #4ecca3 ;
+
 
 
 }
 
 .fileUpload_sendButton:hover{
     cursor: pointer;
-    border: solid 2px #4ecca3 ;
+    border: solid 5px #4ecca3 ;
 }
+
+
+.resetFile_button{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: 550;
+    text-decoration:none;
+    outline: 0;
+    border-radius:0.7em;
+    transition: all 0.2s;
+    color: white;
+    background-color: #f1404e;
+    border: solid 1px #f1404e ;
+ 
+ }
+ 
+ .resetFile_button:hover{
+     cursor: pointer;
+     border: solid 5px #f1404e ;
+ }
