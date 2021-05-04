@@ -9,20 +9,37 @@ export default function FileUpload() {
 
     function handleSumbit (e){
         e.preventDefault();
+        
     }
 
-    function handleFile(e){
-            
-        if(e.target.files[0]){
-            setImageURL({
-                image: URL.createObjectURL(e.target.files[0])
-            })
-    
-           setSelectedFile(e.target.files[0]);
-            setIsFilePicked(true);
-            console.log(selectedFile)
-        }
+    function handleFile(e) {
 
+       if(e.target.files){
+            const file = e.target.files;
+            if (validateFile(file)) {
+                setImageURL({
+                  image: URL.createObjectURL(e.target.files[0]),
+                });
+                setSelectedFile(e.target.files[0]);
+                setIsFilePicked(true);
+              }
+       } 
+
+
+    }
+
+    function validateFile(file){
+        console.log(file)
+        const maxFilesize = 3000000
+        if(file[0].size <= maxFilesize){
+            return true
+        }
+        return false
+    }
+    function removeFile(){
+
+        setSelectedFile()
+        setIsFilePicked(false)
     }
 
 
@@ -41,6 +58,7 @@ export default function FileUpload() {
                 )}
 
                 <button type="submit" className="fileUpload_sendButton">Send</button>
+                <button type="reset" className="resetFile_button" onClick={removeFile}>Reset</button>
             </form>
         </div>
     )
